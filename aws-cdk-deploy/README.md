@@ -22,6 +22,8 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
 ## Deploy solution
 
+    npm install
+
     export AWS_ACCESS_KEY_ID=<credentials.txt>
     export AWS_SECRET_ACCESS_KEY=<credentials.txt>
     export AWS_DEFAULT_REGION=<credentials.txt>
