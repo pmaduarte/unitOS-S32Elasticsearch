@@ -1,0 +1,832 @@
+{
+  "version": "7.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "AwsCdkDeployStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "AwsCdkDeployStack.template.json"
+      },
+      "metadata": {
+        "/AwsCdkDeployStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.9b8711c14306a84132e796bcb49ab0a1ef2ad37abecb4897e6f629a5d7af27cf",
+              "id": "9b8711c14306a84132e796bcb49ab0a1ef2ad37abecb4897e6f629a5d7af27cf",
+              "packaging": "zip",
+              "sourceHash": "9b8711c14306a84132e796bcb49ab0a1ef2ad37abecb4897e6f629a5d7af27cf",
+              "s3BucketParameter": "AssetParameters9b8711c14306a84132e796bcb49ab0a1ef2ad37abecb4897e6f629a5d7af27cfS3BucketC720CA5C",
+              "s3KeyParameter": "AssetParameters9b8711c14306a84132e796bcb49ab0a1ef2ad37abecb4897e6f629a5d7af27cfS3VersionKeyA98A8814",
+              "artifactHashParameter": "AssetParameters9b8711c14306a84132e796bcb49ab0a1ef2ad37abecb4897e6f629a5d7af27cfArtifactHash155E6B25"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:163:23)",
+              "LegacyStackSynthesizer.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "AwsCdkDeployStack.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:147:40)",
+              "AssetCode.bind (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/code.ts:247:20)",
+              "new Function (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/function.ts:564:29)",
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:18:16)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24",
+              "id": "67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24",
+              "packaging": "zip",
+              "sourceHash": "67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24",
+              "s3BucketParameter": "AssetParameters67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24S3Bucket4D46ABB5",
+              "s3KeyParameter": "AssetParameters67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24S3VersionKeyB0F28861",
+              "artifactHashParameter": "AssetParameters67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24ArtifactHashBA91B77F"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/construct-compat.ts:431:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:163:23)",
+              "LegacyStackSynthesizer.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "AwsCdkDeployStack.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:147:40)",
+              "new LogRetentionFunction (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:134:19)",
+              "LogRetention.ensureSingletonLogRetentionFunction (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:120:12)",
+              "new LogRetention (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:79:27)",
+              "new Function (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/function.ts:661:28)",
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:18:16)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/BucketOutSystemsUnit/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketOutSystemsUnitF077B20E",
+            "trace": [
+              "new Bucket (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1245:22)",
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:14:20)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/BucketOutSystemsUnit/Notifications/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketOutSystemsUnitNotificationsC3AE316D",
+            "trace": [
+              "BucketNotifications.createResourceOnce (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource.ts:105:23)",
+              "BucketNotifications.addNotification (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource.ts:52:27)",
+              "Bucket.addEventNotification (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1359:24)",
+              "S3EventSource.bind (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda-event-sources/lib/s3.ts:31:19)",
+              "Function.addEventSource (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:344:12)",
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:28:8)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/BucketOutSystemsUnit/AllowBucketNotificationsToAwsCdkDeployStackreadloglambdahandlerA804E6E2": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketOutSystemsUnitAllowBucketNotificationsToAwsCdkDeployStackreadloglambdahandlerA804E6E209A0774F",
+            "trace": [
+              "Function.addPermission (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:245:5)",
+              "LambdaDestination.bind (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3-notifications/lib/lambda.ts:22:15)",
+              "BucketNotifications.addNotification (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource.ts:56:32)",
+              "Bucket.addEventNotification (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1359:24)",
+              "S3EventSource.bind (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda-event-sources/lib/s3.ts:31:19)",
+              "Function.addEventSource (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:344:12)",
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:28:8)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/read-log-lambda-handler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "readloglambdahandlerServiceRoleEED338F6",
+            "trace": [
+              "new Role (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "new Function (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/function.ts:544:31)",
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:18:16)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/read-log-lambda-handler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "readloglambdahandlerServiceRoleDefaultPolicyD740103B",
+            "trace": [
+              "new Policy (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "Function.addToPrincipal (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-iam/lib/grant.ts:168:61)",
+              "Function.addToPrincipalOrResource (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-iam/lib/grant.ts:119:26)",
+              "Bucket.grant (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:689:27)",
+              "Bucket.grantReadWrite (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:626:17)",
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:26:12)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/read-log-lambda-handler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "readloglambdahandlerB2068F27",
+            "trace": [
+              "new Function (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/function.ts:600:35)",
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:18:16)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/read-log-lambda-handler/LogRetention/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "readloglambdahandlerLogRetention2663B0A5",
+            "trace": [
+              "new LogRetention (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:84:22)",
+              "new Function (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/function.ts:661:28)",
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:18:16)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/AssetParameters/9b8711c14306a84132e796bcb49ab0a1ef2ad37abecb4897e6f629a5d7af27cf/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters9b8711c14306a84132e796bcb49ab0a1ef2ad37abecb4897e6f629a5d7af27cfS3BucketC720CA5C",
+            "trace": [
+              "new FileAssetParameters (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
+              "LegacyStackSynthesizer.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "AwsCdkDeployStack.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:147:40)",
+              "AssetCode.bind (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/code.ts:247:20)",
+              "new Function (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/function.ts:564:29)",
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:18:16)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/AssetParameters/9b8711c14306a84132e796bcb49ab0a1ef2ad37abecb4897e6f629a5d7af27cf/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters9b8711c14306a84132e796bcb49ab0a1ef2ad37abecb4897e6f629a5d7af27cfS3VersionKeyA98A8814",
+            "trace": [
+              "new FileAssetParameters (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
+              "LegacyStackSynthesizer.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "AwsCdkDeployStack.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:147:40)",
+              "AssetCode.bind (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/code.ts:247:20)",
+              "new Function (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/function.ts:564:29)",
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:18:16)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/AssetParameters/9b8711c14306a84132e796bcb49ab0a1ef2ad37abecb4897e6f629a5d7af27cf/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters9b8711c14306a84132e796bcb49ab0a1ef2ad37abecb4897e6f629a5d7af27cfArtifactHash155E6B25",
+            "trace": [
+              "new FileAssetParameters (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
+              "LegacyStackSynthesizer.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "AwsCdkDeployStack.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:147:40)",
+              "AssetCode.bind (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/code.ts:247:20)",
+              "new Function (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/function.ts:564:29)",
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:18:16)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/AssetParameters/67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24S3Bucket4D46ABB5",
+            "trace": [
+              "new FileAssetParameters (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
+              "LegacyStackSynthesizer.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "AwsCdkDeployStack.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:147:40)",
+              "new LogRetentionFunction (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:134:19)",
+              "LogRetention.ensureSingletonLogRetentionFunction (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:120:12)",
+              "new LogRetention (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:79:27)",
+              "new Function (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/function.ts:661:28)",
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:18:16)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/AssetParameters/67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24S3VersionKeyB0F28861",
+            "trace": [
+              "new FileAssetParameters (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
+              "LegacyStackSynthesizer.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "AwsCdkDeployStack.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:147:40)",
+              "new LogRetentionFunction (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:134:19)",
+              "LogRetention.ensureSingletonLogRetentionFunction (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:120:12)",
+              "new LogRetention (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:79:27)",
+              "new Function (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/function.ts:661:28)",
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:18:16)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/AssetParameters/67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24ArtifactHashBA91B77F",
+            "trace": [
+              "new FileAssetParameters (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:150:16)",
+              "LegacyStackSynthesizer.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "AwsCdkDeployStack.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack.ts:653:29)",
+              "LegacyStackSynthesizer.addFileAsset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:147:40)",
+              "new LogRetentionFunction (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:134:19)",
+              "LogRetention.ensureSingletonLogRetentionFunction (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:120:12)",
+              "new LogRetention (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:79:27)",
+              "new Function (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/function.ts:661:28)",
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:18:16)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB",
+            "trace": [
+              "new Role (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "new LogRetentionFunction (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:139:32)",
+              "LogRetention.ensureSingletonLogRetentionFunction (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:120:12)",
+              "new LogRetention (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:79:27)",
+              "new Function (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/function.ts:661:28)",
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:18:16)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB",
+            "trace": [
+              "new Policy (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "new LogRetentionFunction (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:144:10)",
+              "LogRetention.ensureSingletonLogRetentionFunction (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:120:12)",
+              "new LogRetention (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:79:27)",
+              "new Function (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/function.ts:661:28)",
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:18:16)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A",
+            "trace": [
+              "new LogRetentionFunction (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:153:22)",
+              "LogRetention.ensureSingletonLogRetentionFunction (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:120:12)",
+              "new LogRetention (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:79:27)",
+              "new Function (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/function.ts:661:28)",
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:18:16)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleB6FB88EC",
+            "trace": [
+              "new Role (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "new NotificationsResourceHandler (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource-handler.ts:50:18)",
+              "Function.singleton (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource-handler.ts:35:16)",
+              "BucketNotifications.createResourceOnce (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource.ts:103:55)",
+              "BucketNotifications.addNotification (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource.ts:52:27)",
+              "Bucket.addEventNotification (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1359:24)",
+              "S3EventSource.bind (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda-event-sources/lib/s3.ts:31:19)",
+              "Function.addEventSource (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:344:12)",
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:28:8)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleDefaultPolicy2CF63D36",
+            "trace": [
+              "new Policy (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "Role.addToPolicy (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-iam/lib/role.ts:376:17)",
+              "new NotificationsResourceHandler (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource-handler.ts:58:10)",
+              "Function.singleton (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource-handler.ts:35:16)",
+              "BucketNotifications.createResourceOnce (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource.ts:103:55)",
+              "BucketNotifications.addNotification (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource.ts:52:27)",
+              "Bucket.addEventNotification (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1359:24)",
+              "S3EventSource.bind (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda-event-sources/lib/s3.ts:31:19)",
+              "Function.addEventSource (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:344:12)",
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:28:8)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db8347ECC3691",
+            "trace": [
+              "new NotificationsResourceHandler (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource-handler.ts:74:22)",
+              "Function.singleton (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource-handler.ts:35:16)",
+              "BucketNotifications.createResourceOnce (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource.ts:103:55)",
+              "BucketNotifications.addNotification (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/notifications-resource/notifications-resource.ts:52:27)",
+              "Bucket.addEventNotification (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1359:24)",
+              "S3EventSource.bind (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda-event-sources/lib/s3.ts:31:19)",
+              "Function.addEventSource (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:344:12)",
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:28:8)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/BucketNameEnvironmentVariable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BucketNameEnvironmentVariable",
+            "trace": [
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:38:5)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/FunctionLogGroupEnvironmentVariable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FunctionLogGroupEnvironmentVariable",
+            "trace": [
+              "new AwsCdkDeployStack (/work/devbox/S32Elasticsearch/aws-cdk-deploy/lib/aws-cdk-deploy-stack.ts:43:5)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/bin/aws-cdk-deploy.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Module.m._compile (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "main (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:701:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)",
+              "Module.load (internal/modules/cjs/loader.js:600:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:539:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:531:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:754:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.15.3/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:51:24)",
+              "construct (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5)",
+              "visit (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.App.process.once (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:277:13)",
+              "process.emit (events.js:189:13)",
+              "process.EventEmitter.emit (domain.js:441:20)",
+              "process.emit (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:120:23)"
+            ]
+          }
+        ],
+        "/AwsCdkDeployStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:60:27)",
+              "construct (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5)",
+              "visit (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.App.process.once (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:277:13)",
+              "process.emit (events.js:189:13)",
+              "process.EventEmitter.emit (domain.js:441:20)",
+              "process.emit (/work/devbox/S32Elasticsearch/aws-cdk-deploy/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:120:23)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
