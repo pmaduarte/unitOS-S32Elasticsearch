@@ -1,0 +1,40 @@
+- key: iislogs
+  title: iislogs
+  description: These are the fields used by iislogs.
+  fields:
+    - name: "@log-timestamp"
+      type: date
+    - name: s-ip 
+      type: keyword 
+    - name: cs-method
+      type: keyword
+    - name: cs-uri-stem
+      type: keyword
+    - name: cs-uri-query
+      type: keyword
+    - name: cs-uri-query
+      type: text
+      multi_fields: 
+        - name: keyword
+          type: keyword 
+    - name: s-port
+      type: keyword
+    - name: cs-username
+      type: keyword
+    - name: c-ip
+      type: keyword
+    - name: cs(User-Agent)
+      type: text
+      multi_fields: 
+        - name: keyword
+          type: keyword 
+    - name: cs(Referer)
+      type: keyword
+    - name: sc-status
+      type: keyword
+    - name: sc-substatus
+      type: keyword
+    - name: sc-win32-status
+      type: keyword
+    - name: time-taken
+      type: keyword

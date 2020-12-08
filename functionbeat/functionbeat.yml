@@ -1,0 +1,64 @@
+###################### Functionbeat Configuration #######################
+
+# You can find the full configuration reference here:
+# https://www.elastic.co/guide/en/beats/functionbeat/index.html
+
+# ================================== Provider ==================================
+# Configure functions to run on AWS Lambda, currently we assume that the credentials
+# are present in the environment to correctly create the function when using the CLI.
+#
+functionbeat.provider.aws.endpoint: "s3.amazonaws.com"
+functionbeat.provider.aws.deploy_bucket: '${AWS_DEPLOY_BUCKET}'
+
+functionbeat.provider.aws.functions:
+  - name: stream-cloudwatch-logs-elasticsearch
+    enabled: true
+    type: cloudwatch_logs
+    description: "Lambda function for cloudwatch logs"
+    # Avoid lambda running more than once
+    timeout: 2m
+
+    triggers:
+      - log_group_name: '${AWS_CLOUDWATCH_LOG_TRIGGER}'
+      # - log_group_name: '/aws/lambda/AwsCdkDeployStack-readloglambdahandlerB2068F27-XOZ39TZELL9M'
+      # filter_pattern: mylog_
+    
+    processors:
+      - dissect:
+          tokenizer: "%{}\t%{}\t%{}\t%{@log-timestamp} %{+@log-timestamp} %{s-ip} %{cs-method} %{cs-uri-stem} %{cs-uri-query} %{s-port} %{cs-username} %{c-ip} %{cs(User-Agent)} %{cs(Referer)} %{sc-status} %{sc-substatus} %{sc-win32-status} %{time-taken->}"
+          field: "message"
+          trim_values: all
+          target_prefix: ""
+      - include_fields:
+          fields: ["@log-timestamp",  "s-ip", "cs-method", "cs-uri-stem", "cs-uri-query", "s-port", "cs-username", "c-ip", "cs(User-Agent)", "cs(Referer)", "sc-status", "sc-substatus", "sc-win32-status", "time-taken"]          
+
+# =============================== Elastic Cloud ================================
+
+# These settings simplify using Functionbeat with the Elastic Cloud (https://cloud.elastic.co/).
+
+cloud.id: '${CLOUD_ID}'
+cloud.auth: '${CLOUD_AUTH}'
+
+# ================================== Outputs ===================================
+
+# ---------------------------- Elasticsearch Output ----------------------------
+output.elasticsearch:
+  hosts: ['${CLOUD_ELASTICSEARCH_URL}']
+  index: "iislogs-%{+YYYY.MM.dd}"
+
+# ================================== Logging ===================================
+
+logging.level: info
+
+# ================================== Template ==================================
+
+setup.template:
+  name: 'iislogs'
+  pattern: 'iislogs-*'
+  enabled: false
+  fields: "fields.yml"
+
+# ====================== Index Lifecycle Management (ILM) ======================
+
+setup.ilm.enabled: false
+setup.ilm.overwrite: true

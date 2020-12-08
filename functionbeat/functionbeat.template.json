@@ -1,0 +1,126 @@
+{
+  "index_patterns": [
+    "iislogs-*"
+  ],
+  "mappings": {
+    "_meta": {
+      "beat": "functionbeat",
+      "version": "7.10.0"
+    },
+    "date_detection": false,
+    "dynamic_templates": [
+      {
+        "strings_as_keyword": {
+          "mapping": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          },
+          "match_mapping_type": "string"
+        }
+      }
+    ],
+    "properties": {
+      "@log-timestamp": {
+        "type": "date",
+        "format": "yyyy-MM-dd HH:mm:ss"
+      },
+      "c-ip": {
+        "ignore_above": 1024,
+        "type": "keyword"
+      },
+      "cs(Referer)": {
+        "ignore_above": 1024,
+        "type": "keyword"
+      },
+      "cs(User-Agent)": {
+        "fields": {
+          "keyword": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          }
+        },
+        "norms": false,
+        "type": "text"
+      },
+      "cs-method": {
+        "ignore_above": 1024,
+        "type": "keyword"
+      },
+      "cs-uri-query": {
+        "fields": {
+          "keyword": {
+            "ignore_above": 1024,
+            "type": "keyword"
+          }
+        },
+        "norms": false,
+        "type": "text"
+      },
+      "cs-uri-stem": {
+        "ignore_above": 1024,
+        "type": "keyword"
+      },
+      "cs-username": {
+        "ignore_above": 1024,
+        "type": "keyword"
+      },
+      "s-ip": {
+        "ignore_above": 1024,
+        "type": "keyword"
+      },
+      "s-port": {
+        "ignore_above": 1024,
+        "type": "keyword"
+      },
+      "sc-status": {
+        "ignore_above": 1024,
+        "type": "keyword"
+      },
+      "sc-substatus": {
+        "ignore_above": 1024,
+        "type": "keyword"
+      },
+      "sc-win32-status": {
+        "ignore_above": 1024,
+        "type": "keyword"
+      },
+      "time-taken": {
+        "ignore_above": 1024,
+        "type": "keyword"
+      }
+    }
+  },
+  "order": 1,
+  "settings": {
+    "index": {
+      "mapping": {
+        "total_fields": {
+          "limit": 10000
+        }
+      },
+      "max_docvalue_fields_search": 200,
+      "query": {
+        "default_field": [
+          "s-ip",
+          "cs-method",
+          "cs-uri-stem",
+          "cs-uri-query",
+          "keyword",
+          "cs-uri-query",
+          "s-port",
+          "cs-username",
+          "c-ip",
+          "keyword",
+          "cs(User-Agent)",
+          "cs(Referer)",
+          "sc-status",
+          "sc-substatus",
+          "sc-win32-status",
+          "time-taken",
+          "fields.*"
+        ]
+      },
+      "refresh_interval": "5s"
+    }
+  }
+}
