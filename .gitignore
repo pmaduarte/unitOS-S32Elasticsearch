@@ -1,2 +1,6 @@
 aws-cdk-deploy/cdk.out
 aws-cdk-deploy/node_modules
+functionbeat/LICENSE.txt
+functionbeat/NOTICE.txt
+functionbeat/pkg
+functionbeat/functionbeat
